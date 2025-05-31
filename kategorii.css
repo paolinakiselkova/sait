@@ -1,0 +1,358 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500');
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+body{
+    background-color:#ded6d6;
+
+}
+body a{
+    text-shadow: 4px 4px 4px #aaa;
+  }
+body i{
+        text-shadow: 4px 4px 4px #aaa;
+}
+html{
+    font-size: 90%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+.header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fcfcfc;
+    box-shadow: 0 5px 25px rgba(18, 17, 17, 0.952);
+    padding: 0 100px;
+    transition: 0.6s;
+}
+.logo{
+    margin-right: auto;
+    font-size: 3rem;
+    color:rgb(219, 188, 214);
+}
+i{
+    color: #d8b5c3;
+    font-size: 35px;
+}
+.navbar a{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.navbar :hover{
+    color: rgb(95, 17, 64);
+}
+.icons a, 
+.icons div{
+    font-size: 2rem;
+    margin-left: 10rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+#menu-btn{
+    display: none;
+}
+
+h1.title{
+    margin-bottom: 30px;
+    color: #444444;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 38px;
+    word-spacing: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+p{
+    margin-bottom: 10px;
+    color:#d997b1;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.main{
+    width: 100vw;
+    height: auto;
+    margin: 2% auto;
+}
+.banner{
+    width: 100%;
+}
+.about{
+    padding: 5% 10%;
+    text-align: center;
+
+}
+#load-more{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 13px 30px;
+    border: 1px solid rgb(2, 2, 2);
+    color: rgb(25, 25, 25);
+    font-size: 16px;
+    background-color:azure;
+    cursor: pointer;
+}
+#load-more:hover{
+background-color: rgb(224, 193, 199);
+    border-color: rgb(199, 112, 130);
+    color: rgb(118, 101, 114);
+}
+.clearfix::after{
+    content:"";
+    display:block;
+    clear: both;
+}
+.product{
+    max-width: 1250px;
+    padding: 100px 15px;
+    margin: 0 auto;
+}
+.product h1{
+ float:left;
+    font-weight: 200;
+    font-size: 3rem;
+    color: rgb(129, 90, 113);
+    text-align: right;
+}
+.product hr{
+    clear: both;
+    height: 2px;
+    background-color: #ffffff;
+    border:none;
+}
+.product-box{
+    width: 20.5%;
+    height: 730px;
+    float: left;
+    margin:  0% 2%;
+    padding-bottom: 15px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.product-box img{
+    width: 250px;
+    height: 150px;
+    height:auto;
+    background-position: right;
+}
+
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.product-card{
+    background-color:#fff;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0,0.1);
+}
+.product-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product-card h2{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.price{
+    color: #e60073;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.discription{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.sizes{
+    margin-bottom: 10px;
+}
+.buy-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e60073;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.pagination{
+text-align: center;
+margin-top: 40px;
+}
+.pagination a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+footer {
+  background-color: #fff;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a,
+.footer-column p a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons img,
+.payment-icons img,
+.delivery-icons img {
+  width: 40px;
+  height: auto;
+  margin: 5px 8px 5px 0;
+}
+
+h4{
+    color: black    ;
+}
+footer p{
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+.content{
+    display: flex;
+    min-height: 20vh;
+    float: none;
+    width: 100%;
+   margin: auto;
+   padding-top: 80px;
+}
+.content section{
+    margin-top: 8vh;
+    margin-left: 20vh;
+}
+.content-form{
+    margin-top: 7rem;
+}
+.section{
+    width: 100%;  
+}
+.section i{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+form section{
+    margin-bottom: 20px;
+    text-align: left;
+}
+form label{
+    display: block;
+    margin-bottom: 2px;
+    color: #787878;
+}
+form input[type="email"],
+form input[type="password"]{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #671d34;
+    border-radius: 5px;
+    font-size: 14px;
+}
+#checkboxLabel{
+    font-size: 14px;
+    color: #3d3d3d;
+}
+#checkboxLabel a{
+    color:#030303;
+    text-decoration: none;
+    font-weight: bold;
+}
+#checkboxLabel span{
+    font-weight: bold;
+    color: #903957;
+}
+form button{
+    background-color: #785365;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 10px;
+}
+.image-section{
+    float: right;
+    width: 30%;
+}
+.image-section img{
+    width: 50%;
+    height:auto;
+    background-position: left;
+}
+
+
